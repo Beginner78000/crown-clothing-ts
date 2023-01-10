@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import "./index.scss";
 import App from "./components/Pages/App/App";
 import { store, persistor } from "./store";
 import { PersistGate } from "redux-persist/integration/react";
@@ -20,7 +19,7 @@ root.render(
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <Elements stripe={stripePromise}>
-            <App />
+              <App />
           </Elements>
         </BrowserRouter>
       </PersistGate>
